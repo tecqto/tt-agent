@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 #  tt-nstall.py
-#  Code by: 
+#  Code by: Tecqto.com
 #  Date: 03/01/2017
 #  Revised: 11/02/2017
 #  Tested: CoreOS, Cents OS, Fedora, Debian, Ubuntu, FreeBsd
@@ -204,7 +204,7 @@ if not os.path.exists(tecqto_dir):
 
 # Method 1: Download
 print("|   Downloading tt-agent.py to /etc/tecqto\n|\n|  ")
-download_cmd = 'wget -nv -o /dev/stdout -O /etc/tecqto/tt-agent.py --no-check-certificate http://tecqto.com/agent/tt-agent.py'
+download_cmd = 'wget -nv -o /dev/stdout -O /etc/tecqto/tt-agent.py --no-check-certificate https://raw.githubusercontent.com/tecqto/tt-agent/master/tt-agent.py'
 download_command = download_cmd.split()
 dl = subprocess.Popen(download_command)
 dl.wait()

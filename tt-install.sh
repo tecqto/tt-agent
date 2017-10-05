@@ -1,8 +1,8 @@
 #!/bin/bash
 #
 # Tecqto-Agent installer bash script
-# Detects if Python 2 is installed and then runs the actual installer
-#  Code by: 
+# 
+#  Code by: Tecqto.com
 #  Date: 03/01/2017
 #  Revised: 11/02/2017
 #  Tested: CoreOS, Cents OS, Fedora, Debian, Ubuntu, FreeBsd
@@ -43,7 +43,7 @@ if [ $pyv == '2' ]
 then
 	echo -e "Python 2 found. Proceeding with Tecqto-Agent installation...\n"
 	mkdir -p /etc/tecqto
-	echo -e "Downloading tt-install.py to /etc/tecqto\n   + $(wget -nv -o /dev/stdout -O /etc/tecqto/tt-install.py --no-check-certificate http://tecqto.com/agent/tt-install.py)"
+	echo -e "Downloading tt-install.py to /etc/tecqto\n   + $(wget -nv -o /dev/stdout -O /etc/tecqto/tt-install.py --no-check-certificate https://raw.githubusercontent.com/tecqto/tt-agent/master/tt-install.py)"
 	if [ -f /etc/tecqto/tt-install.py ]
 then
 	$PYTHONCOMMAND /etc/tecqto/tt-install.py $1

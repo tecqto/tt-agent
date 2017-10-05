@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 #  tt-agent.py
-#  Code by: 
+#  Code by: Tecqto.com
 #  Date: 03/01/2017
 #  Revised: 11/02/2017
 #  Tested: CoreOS, Cents OS, Fedora, Debian, Ubuntu, FreeBsd
